@@ -4,7 +4,7 @@ Selamat Idul Fitri 1443 Hijriah, semoga Allah senantiasa melimpahkan rahmatnya k
 
 ## Deployment
 
-Terbit di halaman [GitHub]('')
+Terbit di halaman [GitHub]('https://chrisnaadhi.github.io/eid-mubarak/')
 
 ## Installation
 

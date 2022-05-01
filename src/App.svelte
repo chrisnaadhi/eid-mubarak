@@ -70,7 +70,7 @@
 
   main {
     height: 100%;
-    background-image: url("https://freevector-images.s3.amazonaws.com/uploads/vector/preview/40579/vecteezyeid-lantern-backgroundas0420_generated.jpg");
+    background-image: url("/assets/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

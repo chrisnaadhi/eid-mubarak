@@ -70,7 +70,7 @@
 
   main {
     height: 100%;
-    background-image: url("/assets/bg.jpg");
+    background-image: url("bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

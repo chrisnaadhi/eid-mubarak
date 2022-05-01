@@ -120,7 +120,7 @@
     color: #fff;
     font-style: italic;
     bottom: 0;
-    position: fixed;
+    position: absolute;
     width: 100%;
   }
 

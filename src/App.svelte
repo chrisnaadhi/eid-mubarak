@@ -3,6 +3,7 @@
   import { onMount } from "svelte";
 
   const confetti = new JSConfetti();
+  const date = new Date();
   let year = "1444";
   let shake = false;
   let maaf = false;
@@ -59,10 +60,8 @@
   </div>
   <footer>
     <p>
-      2022 | Chrisna Adhi Pranoto - Built with <a
-        href="https://svelte.dev/"
-        target="_blank">Svelte</a
-      >
+      {date.getFullYear()} | Chrisna Adhi Pranoto - Built with
+      <a href="https://svelte.dev/" target="_blank">Svelte</a>
     </p>
   </footer>
 </main>

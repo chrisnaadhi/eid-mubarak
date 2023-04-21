@@ -34,6 +34,9 @@
   <script
     src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"
   ></script>
+  <title>
+    Happy Eid Mubarak {year}H | Chrisna Adhi Pranoto
+  </title>
 </svelte:head>
 
 <main>

@@ -3,7 +3,7 @@
   import { onMount } from "svelte";
 
   const confetti = new JSConfetti();
-  let year = "1443";
+  let year = "1444";
   let shake = false;
   let maaf = false;
 
@@ -32,7 +32,8 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
   <script
-    src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"
+  ></script>
 </svelte:head>
 
 <main>
@@ -40,15 +41,17 @@
     <p class="wonder">🕋 | 🕌</p>
     <h1>Eid Mubarak!</h1>
     <h2>{year} Hijriah</h2>
-    <p>Selamat Idul Fitri 1443 H</p>
+    <p>Selamat Idul Fitri {year} H</p>
     <p class={maaf ? "maaf animate__animated animate__heartBeat" : "maaf"}>
       Mohon Maaf Lahir dan Batin
     </p>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <span
       on:click={showConfetti}
       class={shake ? "salam animate__animated animate__shakeY" : "salam"}
       >🤝</span
     >
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
     <p on:click={showConfetti} class="salam-teks">Klik untuk bersalaman</p>
   </div>
   <footer>

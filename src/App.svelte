@@ -4,7 +4,7 @@
 
   const confetti = new JSConfetti();
   const date = new Date();
-  let year = "1444";
+  let year = "1445";
   let shake = false;
   let maaf = false;
 

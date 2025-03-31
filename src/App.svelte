@@ -4,12 +4,6 @@
 
   const confetti = new JSConfetti();
   const date = new Date();
-  const hijriahDate = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
-    day: "numeric",
-    month: "long",
-    weekday: "long",
-    year: "numeric",
-  }).format(date);
   let year = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
     year: "numeric",
   }).format(date);
@@ -44,7 +38,7 @@
     src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"
   ></script>
   <title>
-    Happy Eid Mubarak {year}H | Chrisna Adhi Pranoto
+    Happy Eid Mubarak {year} | Chrisna Adhi Pranoto
   </title>
 </svelte:head>
 
@@ -53,7 +47,6 @@
     <p class="wonder">🕋 | 🕌</p>
     <h1>Eid Mubarak!</h1>
     <h2>{year}ijriah</h2>
-    <!-- <p>{hijriahDate}</p> -->
     <p>Selamat Idul Fitri {year}</p>
     <p class={maaf ? "maaf animate__animated animate__heartBeat" : "maaf"}>
       Mohon Maaf Lahir dan Batin

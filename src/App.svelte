@@ -5,7 +5,7 @@
   const confetti = new JSConfetti();
   const date = new Date();
   let year = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
-    year: "numeric",
+    year: "",
   }).format(date);
   let shake = false;
   let maaf = false;
@@ -46,8 +46,8 @@
   <div class="animate__animated animate__fadeIn">
     <p class="wonder">🕋 | 🕌</p>
     <h1>Eid Mubarak!</h1>
-    <h2>{year}ijriah</h2>
-    <p>Selamat Idul Fitri {year}</p>
+    <h2>{year.split(" ")[0]} Hijriah</h2>
+    <p>Selamat Idul Fitri {year.split(" ")[0]} H</p>
     <p class={maaf ? "maaf animate__animated animate__heartBeat" : "maaf"}>
       Mohon Maaf Lahir dan Batin
     </p>

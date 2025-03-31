@@ -5,7 +5,7 @@
   const confetti = new JSConfetti();
   const date = new Date();
   let year = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
-    year: "",
+    year: "numeric",
   }).format(date);
   let shake = false;
   let maaf = false;

@@ -4,7 +4,15 @@
 
   const confetti = new JSConfetti();
   const date = new Date();
-  let year = "1445";
+  const hijriahDate = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
+    day: "numeric",
+    month: "long",
+    weekday: "long",
+    year: "numeric",
+  }).format(date);
+  let year = new Intl.DateTimeFormat("id-TN-u-ca-islamic", {
+    year: "numeric",
+  }).format(date);
   let shake = false;
   let maaf = false;
 
@@ -45,6 +53,7 @@
     <p class="wonder">🕋 | 🕌</p>
     <h1>Eid Mubarak!</h1>
     <h2>{year} Hijriah</h2>
+    <p>{hijriahDate}</p>
     <p>Selamat Idul Fitri {year} H</p>
     <p class={maaf ? "maaf animate__animated animate__heartBeat" : "maaf"}>
       Mohon Maaf Lahir dan Batin

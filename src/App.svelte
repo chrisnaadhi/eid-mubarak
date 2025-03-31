@@ -52,9 +52,9 @@
   <div class="animate__animated animate__fadeIn">
     <p class="wonder">🕋 | 🕌</p>
     <h1>Eid Mubarak!</h1>
-    <h2>{year} Hijriah</h2>
+    <h2>{year}ijriah</h2>
     <p>{hijriahDate}</p>
-    <p>Selamat Idul Fitri {year} H</p>
+    <p>Selamat Idul Fitri {year}</p>
     <p class={maaf ? "maaf animate__animated animate__heartBeat" : "maaf"}>
       Mohon Maaf Lahir dan Batin
     </p>
